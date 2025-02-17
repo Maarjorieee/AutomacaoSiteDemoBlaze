@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-16T23:31:55.413469" rpa="false" schemaversion="5">
+<suite id="s1" name="Automacao site DemoBlaze" source="C:\Users\marjo\Documents\Automacao site DemoBlaze">
+<suite id="s1-s1" name="Testes" source="C:\Users\marjo\Documents\Automacao site DemoBlaze\testes">
+<suite id="s1-s1-s1" name="Simular Compra" source="C:\Users\marjo\Documents\Automacao site DemoBlaze\testes\Simular_Compra.robot">
+<test id="s1-s1-s1-t1" name="Logar no site da DemoBlaze e realizar uma compra" line="8">
+<kw name="Dado que acesso o site do DemoBlaze" owner="setup_teardown" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-16T23:31:55.779517" level="INFO">Opening browser 'Chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>url=https://www.demoblaze.com/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-16T23:31:55.778918" elapsed="6.265185"/>
+</kw>
+<status status="PASS" start="2025-02-16T23:31:55.777165" elapsed="6.268243"/>
+</kw>
+<kw name="Dado que acesso o site do DemoBlaze" owner="setup_teardown">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-16T23:32:02.047766" level="INFO">Opening browser 'Chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>url=https://www.demoblaze.com/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-16T23:32:02.047037" elapsed="4.725618"/>
+</kw>
+<status status="PASS" start="2025-02-16T23:32:02.046183" elapsed="4.726763"/>
+</kw>
+<kw name="E clico em login e preencho os dados do usuario corretamente" owner="SimularCompraPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-16T23:32:06.775394" level="INFO">Clicking element 'id:login2'.</msg>
+<arg>${LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-16T23:32:06.774557" elapsed="0.110910"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-16T23:32:06.887322" level="INFO">Typing text 'Marj' into text field 'id:loginusername'.</msg>
+<msg time="2025-02-16T23:32:07.150315" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-16T23:32:07.150725" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF612CA6F15+28773]
+	(No symbol) [0x00007FF612C12600]
+	(No symbol) [0x00007FF612AA8DDC]
+	(No symbol) [0x00007FF612AF4705]
+	(No symbol) [0x00007FF612B2724A]
+	(No symbol) [0x00007FF612AF1B36]
+	(No symbol) [0x00007FF612B27460]
+	(No symbol) [0x00007FF612B4F6F3]
+	(No symbol) [0x00007FF612B27023]
+	(No symbol) [0x00007FF612AEFF5E]
+	(No symbol) [0x00007FF612AF11E3]
+	GetHandleVerifier [0x00007FF612FF425D+3490733]
+	GetHandleVerifier [0x00007FF61300BA43+3586963]
+	GetHandleVerifier [0x00007FF61300147D+3544525]
+	GetHandleVerifier [0x00007FF612D6C9DA+838442]
+	(No symbol) [0x00007FF612C1D04F]
+	(No symbol) [0x00007FF612C19614]
+	(No symbol) [0x00007FF612C197B6]
+	(No symbol) [0x00007FF612C08CE9]
+	BaseThreadInitThunk [0x00007FFDFCDA259D+29]
+	RtlUserThreadStart [0x00007FFDFE92AF38+40]
+</msg>
+<arg>${CAMPO_USERNAME}</arg>
+<arg>Marj</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-16T23:32:06.886246" elapsed="0.379700">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF612CA6F15+28773]
+	(No symbol) [0x00007FF612C12600]
+	(No symbol) [0x00007FF612AA8DDC]
+	(No symbol) [0x00007FF612AF4705]
+	(No symbol) [0x00007FF612B2724A]
+	(No symbol) [0x00007FF612AF1B36]
+	(No symbol) [0x00007FF612B27460]
+	(No symbol) [0x00007FF612B4F6F3]
+	(No symbol) [0x00007FF612B27023]
+	(No symbol) [0x00007FF612AEFF5E]
+	(No symbol) [0x00007FF612AF11E3]
+	GetHandleVerifier [0x00007FF612FF425D+3490733]
+	GetHandleVerifier [0x00007FF61300BA43+3586963]
+	GetHandleVerifier [0x00007FF61300147D+3544525]
+	GetHandleVerifier [0x00007FF612D6C9DA+838442]
+	(No symbol) [0x00007FF612C1D04F]
+	(No symbol) [0x00007FF612C19614]
+	(No symbol) [0x00007FF612C197B6]
+	(No symbol) [0x00007FF612C08CE9]
+	BaseThreadInitThunk [0x00007FFDFCDA259D+29]
+	RtlUserThreadStart [0x00007FFDFE92AF38+40]
+</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-16T23:32:07.266456" elapsed="0.000331"/>
+</kw>
+<status status="FAIL" start="2025-02-16T23:32:06.773634" elapsed="0.493413">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF612CA6F15+28773]
+	(No symbol) [0x00007FF612C12600]
+	(No symbol) [0x00007FF612AA8DDC]
+	(No symbol) [0x00007FF612AF4705]
+	(No symbol) [0x00007FF612B2724A]
+	(No symbol) [0x00007FF612AF1B36]
+	(No symbol) [0x00007FF612B27460]
+	(No symbol) [0x00007FF612B4F6F3]
+	(No symbol) [0x00007FF612B27023]
+	(No symbol) [0x00007FF612AEFF5E]
+	(No symbol) [0x00007FF612AF11E3]
+	GetHandleVerifier [0x00007FF612FF425D+3490733]
+	GetHandleVerifier [0x00007FF61300BA43+3586963]
+	GetHandleVerifier [0x00007FF61300147D+3544525]
+	GetHandleVerifier [0x00007FF612D6C9DA+838442]
+	(No symbol) [0x00007FF612C1D04F]
+	(No symbol) [0x00007FF612C19614]
+	(No symbol) [0x00007FF612C197B6]
+	(No symbol) [0x00007FF612C08CE9]
+	BaseThreadInitThunk [0x00007FFDFCDA259D+29]
+	RtlUserThreadStart [0x00007FFDFE92AF38+40]
+</status>
+</kw>
+<kw name="Fechar o navegador" owner="setup_teardown">
+<status status="NOT RUN" start="2025-02-16T23:32:07.267632" elapsed="0.000234"/>
+</kw>
+<kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-16T23:32:07.268928" elapsed="2.272367"/>
+</kw>
+<status status="PASS" start="2025-02-16T23:32:07.268440" elapsed="2.273477"/>
+</kw>
+<status status="FAIL" start="2025-02-16T23:31:55.775735" elapsed="13.767465">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=133.0.6943.99)
+Stacktrace:
+	GetHandleVerifier [0x00007FF612CA6F15+28773]
+	(No symbol) [0x00007FF612C12600]
+	(No symbol) [0x00007FF612AA8DDC]
+	(No symbol) [0x00007FF612AF4705]
+	(No symbol) [0x00007FF612B2724A]
+	(No symbol) [0x00007FF612AF1B36]
+	(No symbol) [0x00007FF612B27460]
+	(No symbol) [0x00007FF612B4F6F3]
+	(No symbol) [0x00007FF612B27023]
+	(No symbol) [0x00007FF612AEFF5E]
+	(No symbol) [0x00007FF612AF11E3]
+	GetHandleVerifier [0x00007FF612FF425D+3490733]
+	GetHandleVerifier [0x00007FF61300BA43+3586963]
+	GetHandleVerifier [0x00007FF61300147D+3544525]
+	GetHandleVerifier [0x00007FF612D6C9DA+838442]
+	(No symbol) [0x00007FF612C1D04F]
+	(No symbol) [0x00007FF612C19614]
+	(No symbol) [0x00007FF612C197B6]
+	(No symbol) [0x00007FF612C08CE9]
+	BaseThreadInitThunk [0x00007FFDFCDA259D+29]
+	RtlUserThreadStart [0x00007FFDFE92AF38+40]
+</status>
+</test>
+<status status="FAIL" start="2025-02-16T23:31:55.474853" elapsed="14.074620"/>
+</suite>
+<status status="FAIL" start="2025-02-16T23:31:55.472028" elapsed="14.079774"/>
+</suite>
+<status status="FAIL" start="2025-02-16T23:31:55.441344" elapsed="14.112142"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Automacao site DemoBlaze" id="s1" pass="0" fail="1" skip="0">Automacao site DemoBlaze</stat>
+<stat name="Testes" id="s1-s1" pass="0" fail="1" skip="0">Automacao site DemoBlaze.Testes</stat>
+<stat name="Simular Compra" id="s1-s1-s1" pass="0" fail="1" skip="0">Automacao site DemoBlaze.Testes.Simular Compra</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

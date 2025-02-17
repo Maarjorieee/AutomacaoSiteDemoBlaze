@@ -1,0 +1,23 @@
+1739766633161	geckodriver	INFO	Listening on 127.0.0.1:49688
+1739766636240	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49689" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\marjo\\AppData\\Local\\Temp\\rust_mozprofilezBvn6a"
+JavaScript error: firefox-config.cfg, line 124: ReferenceError: Components is not defined
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739766636575	Marionette	INFO	Marionette enabled
+1739766636687	Marionette	INFO	Listening on port 49698
+WebDriver BiDi listening on ws://127.0.0.1:49689
+Read port: 49698
+1739766636909	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49689/devtools/browser/69d4a396-2f69-4471-8b3e-70bf2a766ef1
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.demoblaze.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.demoblaze.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.demoblaze.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+1739766653041	Marionette	INFO	Stopped listening on port 49698
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/Prompter.sys.mjs, line 1082: AbortError: Actor 'Prompt' destroyed before query 'Prompt:Open' was resolved
+console.error: (new TypeError("this.webProgress is undefined", "chrome://global/content/elements/browser-custom-element.js", 1028))
+JavaScript error: resource://gre/modules/SubDialog.sys.mjs, line 848: TypeError: this._window is null

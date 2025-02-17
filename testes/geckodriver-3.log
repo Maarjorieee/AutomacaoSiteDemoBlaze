@@ -1,0 +1,22 @@
+1739766074436	geckodriver	INFO	Listening on 127.0.0.1:65193
+1739766077534	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65194" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\marjo\\AppData\\Local\\Temp\\rust_mozprofile3h0iMg"
+JavaScript error: firefox-config.cfg, line 124: ReferenceError: Components is not defined
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739766077894	Marionette	INFO	Marionette enabled
+1739766078033	Marionette	INFO	Listening on port 65206
+WebDriver BiDi listening on ws://127.0.0.1:65194
+Read port: 65206
+1739766078110	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65194/devtools/browser/39cba44e-e6ee-457a-8e75-33e35bceee83
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.demoblaze.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.demoblaze.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.demoblaze.com."
+1739766090529	Marionette	INFO	Stopped listening on port 65206
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/PictureInPicture.sys.mjs, line 607: TypeError: browser is null
+JavaScript error: resource://gre/modules/PictureInPicture.sys.mjs, line 607: TypeError: browser is null

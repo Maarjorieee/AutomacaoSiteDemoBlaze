@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-17T02:21:55.542842" rpa="false" schemaversion="5">
+<suite id="s1" name="Simular Compra" source="C:\Users\marjo\Documents\Automacao site DemoBlaze\testes\Simular_Compra.robot">
+<test id="s1-t1" name="Logar no site da DemoBlaze e realizar uma compra" line="8">
+<kw name="Dado que acesso o site do DemoBlaze" owner="setup_teardown" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:21:55.851636" level="INFO">Opening browser 'firefox' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>url=https://www.demoblaze.com/</arg>
+<arg>browser=firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-17T02:21:55.851460" elapsed="8.771999"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-17T02:22:04.623720" elapsed="0.010969"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:21:55.850904" elapsed="8.783899"/>
+</kw>
+<kw name="E clico em login e preencho os dados do usuario corretamente" owner="SimularCompraPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-17T02:22:04.635532" elapsed="0.024096"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:04.660641" level="INFO">Clicking element 'id:login2'.</msg>
+<arg>${LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:04.659941" elapsed="0.240724"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:04.901006" level="INFO">Clicking element 'id:loginusername'.</msg>
+<arg>${CAMPO_USERNAME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:04.900820" elapsed="0.267540"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:05.168753" level="INFO">Typing text 'Marj' into text field 'id:loginusername'.</msg>
+<arg>${CAMPO_USERNAME}</arg>
+<arg>Marj</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:05.168554" elapsed="0.022241"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:05.191337" level="INFO">Clicking element 'id:loginpassword'.</msg>
+<arg>${CAMPO_SENHA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:05.191044" elapsed="0.231636"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:05.423519" level="INFO">Typing password into text field 'id:loginpassword'.</msg>
+<msg time="2025-02-17T02:22:05.431185" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${CAMPO_SENHA}</arg>
+<arg>1234</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:05.423077" elapsed="0.017742"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:04.635297" elapsed="0.805624"/>
+</kw>
+<kw name="E clico no botao Log in para acessar o sistema" owner="SimularCompraPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:05.441792" level="INFO">Clicking button 'css:#logInModal &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary'.</msg>
+<arg>${BTN_LOGIN}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:05.441564" elapsed="0.227223"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:05.441261" elapsed="0.227628"/>
+</kw>
+<kw name="E clico no link para comprar o Samsung Galaxy S6" owner="SimularCompraPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T02:22:10.670191" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T02:22:05.669484" elapsed="5.000943"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:10.671311" level="INFO">Clicking element 'xpath://*[@id="tbodyid"]/div[1]/div/div/h4/a'.</msg>
+<arg>${LINK_COMPRAR_SAMSUNG}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:10.670817" elapsed="0.450335"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:05.669260" elapsed="5.451995"/>
+</kw>
+<kw name="E clico no botao para adicionar ao carrinho" owner="SimularCompraPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T02:22:16.122721" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T02:22:11.121783" elapsed="5.001180"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:16.123895" level="INFO">Clicking element 'xpath://*[@id="tbodyid"]/div[2]/div/a'.</msg>
+<arg>${BTN_ADICIONAR_AO_CARRINHO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:16.123390" elapsed="0.291170"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T02:22:21.415774" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T02:22:16.414808" elapsed="5.001218"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:21.416724" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-02-17T02:22:21.416449" elapsed="0.025671"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:11.121554" elapsed="10.320701"/>
+</kw>
+<kw name="E clico em Cart" owner="SimularCompraPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:21.443126" level="INFO">Clicking element 'id:cartur'.</msg>
+<arg>${CART}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:21.442987" elapsed="0.492533"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:21.442734" elapsed="0.492967"/>
+</kw>
+<kw name="Quando clico em Place Order e preencho o formulario para concluir a compra" owner="SimularCompraPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:21.936911" level="INFO">Clicking button 'css:#page-wrapper &gt; div &gt; div.col-lg-1 &gt; button'.</msg>
+<arg>${BTN_FINALIZAR_COMPRA}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:21.936641" elapsed="0.251551"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.188566" level="INFO">Clicking element 'id:name'.</msg>
+<arg>${CAMPO_NAME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.188365" elapsed="0.251165"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.440291" level="INFO">Typing text 'Marjorie' into text field 'id:name'.</msg>
+<arg>${CAMPO_NAME}</arg>
+<arg>Marjorie</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.439851" elapsed="0.021955"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.462357" level="INFO">Clicking element 'id:country'.</msg>
+<arg>${CAMPO_COUNTRY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.462054" elapsed="0.214568"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.677492" level="INFO">Typing text 'Brasil' into text field 'id:country'.</msg>
+<arg>${CAMPO_COUNTRY}</arg>
+<arg>Brasil</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.677028" elapsed="0.016941"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.694504" level="INFO">Clicking element 'id:city'.</msg>
+<arg>${CAMPO_CITY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.694298" elapsed="0.221526"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.916156" level="INFO">Typing text 'Guarujá' into text field 'id:city'.</msg>
+<arg>${CAMPO_CITY}</arg>
+<arg>Guarujá</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.915978" elapsed="0.014310"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:22.930657" level="INFO">Clicking element 'id:card'.</msg>
+<arg>${CAMPO_CREDIT_CARD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:22.930465" elapsed="0.219913"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:23.151283" level="INFO">Typing text '12123131' into text field 'id:card'.</msg>
+<arg>${CAMPO_CREDIT_CARD}</arg>
+<arg>12123131</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.150778" elapsed="0.019045"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:23.170162" level="INFO">Clicking element 'id:month'.</msg>
+<arg>${CAMPO_MONTH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.169974" elapsed="0.220320"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:23.391113" level="INFO">Typing text 'Fevereiro' into text field 'id:month'.</msg>
+<arg>${CAMPO_MONTH}</arg>
+<arg>Fevereiro</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.390657" elapsed="0.021415"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:23.412416" level="INFO">Clicking element 'id:year'.</msg>
+<arg>${CAMPO_YEAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.412238" elapsed="0.218510"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:23.631683" level="INFO">Typing text '2025' into text field 'id:year'.</msg>
+<arg>${CAMPO_YEAR}</arg>
+<arg>2025</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.631158" elapsed="0.016157"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:21.936215" elapsed="1.711198"/>
+</kw>
+<kw name="E clico em Purchase" owner="SimularCompraPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:23.648070" level="INFO">Clicking button 'css:#orderModal &gt; div &gt; div &gt; div.modal-footer &gt; button.btn.btn-primary'.</msg>
+<arg>${BTN_PURCHASE}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.647927" elapsed="0.228623"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:23.647710" elapsed="0.228984"/>
+</kw>
+<kw name="Entao o modal de conclusão de compra é exibido" owner="SimularCompraPage">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-17T02:22:28.878459" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-17T02:22:23.877358" elapsed="5.001354"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-17T02:22:28.879820" level="INFO">Verifying element 'css:body &gt; div.sweet-alert.showSweetAlert.visible &gt; h2' contains exact text 'Thank you for your purchase!'.</msg>
+<arg>${TXT_CONCLUSAO_COMPRA}</arg>
+<arg>Thank you for your purchase!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-02-17T02:22:28.879173" elapsed="0.018119"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:23.877104" elapsed="5.020294"/>
+</kw>
+<kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-17T02:22:28.898004" elapsed="2.749039"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:22:28.897791" elapsed="2.749417"/>
+</kw>
+<status status="PASS" start="2025-02-17T02:21:55.850131" elapsed="35.797295"/>
+</test>
+<status status="PASS" start="2025-02-17T02:21:55.544510" elapsed="36.103934"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Simular Compra" id="s1" pass="1" fail="0" skip="0">Simular Compra</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
