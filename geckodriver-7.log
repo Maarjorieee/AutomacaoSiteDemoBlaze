@@ -1,0 +1,14 @@
+1739814329671	geckodriver	INFO	Listening on 127.0.0.1:52151
+1739814332740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52152" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\marjo\\AppData\\Local\\Temp\\rust_mozprofileeGwKq0"
+JavaScript error: firefox-config.cfg, line 124: ReferenceError: Components is not defined
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1739814333138	Marionette	INFO	Marionette enabled
+1739814333376	Marionette	INFO	Listening on port 52159
+WebDriver BiDi listening on ws://127.0.0.1:52152
+Read port: 52159
+1739814333571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52152/devtools/browser/d4f2f49b-0d75-4f79-a1d8-c41f3280fd10
+1739814338801	Marionette	INFO	Stopped listening on port 52159
+Dynamically enable window occlusion 1

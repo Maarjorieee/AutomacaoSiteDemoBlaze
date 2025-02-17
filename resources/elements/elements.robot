@@ -18,3 +18,4 @@ ${CAMPO_MONTH}                     id:month
 ${CAMPO_YEAR}                      id:year
 ${BTN_PURCHASE}                    css:#orderModal > div > div > div.modal-footer > button.btn.btn-primary
 ${TXT_CONCLUSAO_COMPRA}            css:body > div.sweet-alert.showSweetAlert.visible > h2
+${LINK_DELETE}                     xpath://*[@id="tbodyid"]/tr/td[4]/a

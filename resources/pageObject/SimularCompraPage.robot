@@ -7,20 +7,20 @@ E clico em login
     Wait Until Element Is Visible    ${LOGIN}    timeout=20s
     Click Element    ${LOGIN}
 
-E preencho os dados do usuario corretamente    
+E preencho os dados do usuário corretamente    
     Click Element    ${CAMPO_USERNAME}
     Input Text       ${CAMPO_USERNAME}     Marj
     Click Element    ${CAMPO_SENHA}
     Input Password   ${CAMPO_SENHA}        1234  
 
-E clico no botao Log in para acessar o sistema
+E clico no botão Log in para acessar o sistema
     Click Button    ${BTN_LOGIN}
 
 E clico no link para comprar o Samsung Galaxy S6
    Sleep    5s
    Click Element    ${LINK_COMPRAR_SAMSUNG}
 
-E clico no botao para adicionar ao carrinho
+E clico no botão para adicionar ao carrinho
     Sleep    5s
     Click Element    ${BTN_ADICIONAR_AO_CARRINHO}
     Handle Alert
@@ -31,7 +31,7 @@ E clico em Cart
 Quando clico em Place Order
     Click Button    ${BTN_FINALIZAR_COMPRA}
 
-E preencho o formulario para concluir a compra
+E preencho o formulário para concluir a compra
     Click Element   ${CAMPO_NAME}
     Input Text      ${CAMPO_NAME}             Marjorie
     Click Element   ${CAMPO_COUNTRY}
@@ -50,3 +50,11 @@ E clico em Purchase
 Entao o modal de conclusão de compra é exibido
     Sleep    5s
     SeleniumLibrary.Element Text Should Be    ${TXT_CONCLUSAO_COMPRA}    Thank you for your purchase!
+
+Quando clico em Delete
+    Sleep    5s
+    Click Element    ${LINK_DELETE}
+
+Então o produto é removido do carrinho
+    Sleep    5s
+    Element Should Not Be Visible    ${LINK_DELETE}
